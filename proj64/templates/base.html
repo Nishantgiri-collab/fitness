@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}
+        <title>default</title>
+    {% endblock %}
+    <link rel="stylesheet" href="{% static 'base1.css' %}">
+</head>
+<body>
+
+<header>
+    <h1>MYFITNESS</h1>
+</header>
+{% block line %}
+    <div class="navi">
+    <a href="/v1/ho/">Home</a>
+    <a href="/v1/co/">Contact us</a>
+    <a href="/v1/ga/">Gallery</a>
+    <a href="/v1/lo/">Login</a>
+    <a href="/v1/re">Register</a>
+    </div>
+{% endblock %}
+
+{% block home %}
+{% endblock home%}
+
+{% block base %}
+    <h1> basepage  </h1>
+{% endblock %}
+
+{% block img %}
+
+{% endblock img %}
+
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<footer>
+    <h3>Copyright 2019 MyFitness, Inc.</h3>
+</footer>
+</body>
+</html>

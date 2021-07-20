@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+    {% block title %}
+        <title>registration</title>
+    {% endblock %}
+
+{% block line %}
+    <div class="navi">
+    <a href="/v1/ho/">Home</a>
+    <a href="/v1/co/">Contact us</a>
+    <a href="/v1/ga/">Gallery</a>
+    <a href="/v1/lo/">Login</a>
+    <a href="/v1/re">Register</a>
+    </div>
+{% endblock %}
+
+
+{% block base %}
+    <h1> Registration page  </h1>
+    <form >
+        firstname:&nbsp;&nbsp;<input type="text" placeholder="Enter first name" name="name"><br>
+        lastname:&nbsp;&nbsp;&nbsp;<input type="text" placeholder="Enter last name" name="name"><br>
+        Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="Enter Email" name="email"><br>
+        password:&nbsp;&nbsp;&nbsp;<input type="password" placeholder="Password" name="psw-repeat" required><br>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me<br>
+        <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p><br>
+
+        <button type="button" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+    </form>
+{% endblock %}

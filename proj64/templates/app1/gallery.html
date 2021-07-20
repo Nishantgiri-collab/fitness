@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+
+    {% block title %}
+        <title>gallery</title>
+    {% endblock %}
+{% block line %}
+    <div class="navi">
+    <a href="/v1/ho/">Home</a>
+    <a href="/v1/co/">Contact us</a>
+    <a href="/v1/ga/">Gallery</a>
+    <a href="/v1/lo/">Login</a>
+    <a href="/v1/re">Register</a>
+    </div>
+{% endblock %}
+
+{% block base %}
+    <h1> gallery page  </h1>
+{% endblock base %}
+
+
+{% block img %}
+{% load static %}
+    <img src="{% static 'image/a2.jpg' %}" alt="image1" width="500">
+    <img src="{% static 'image/a3.jpg' %}" alt="image1" width="400">
+    <img src="{% static 'image/aaa.jpg' %}" alt="image1" width="400">
+    <img src="{% static 'image/cute.jpg' %}" alt="image1" width="400">
+    <img src="{% static 'image/w1.jpg' %}" alt="image1" width="500">
+    <img src="{% static 'image/w6.jpg' %}" alt="image1" width="500">
+    <img src="{% static 'image/w4.jpg' %}" alt="image1" width="500">
+    <img src="{% static 'image/w3.png' %}" alt="image1" width="400">
+    <img src="{% static 'image/w5.png' %}" alt="image1" width="500">
+{% endblock img %}
+

@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+    {% block title %}
+        <title>login</title>
+    {% endblock %}
+
+{% block line %}
+    <div class="navi">
+    <a href="/v1/ho/">Home</a>
+    <a href="/v1/co/">Contact us</a>
+    <a href="/v1/ga/">Gallery</a>
+    <a href="/v1/lo/">Login</a>
+    <a href="/v1/re">Register</a>
+    </div>
+{% endblock %}
+
+{% block home %}
+    <h1>login here</h1>
+{% endblock %}
+
+{% block base %}
+    username:<input type="text" placeholder="Enter Username" name="uname"><br>
+    password:<input type="password" placeholder="Enter Password" name="psw"><br>
+    <button type="submit">Login</button>
+{% endblock %}
+
